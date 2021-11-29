@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding_default">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/logo_app_description" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="@id/ivIcon"
+        app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        android:gravity="center"
+        android:text="@string/login_welcome"
+        android:textAppearance="?attr/textAppearanceHeadline5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bEmail"
+        android:layout_width="@dimen/login_width_button"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        android:text="@string/login_email"
+        app:icon="@drawable/ic_email"
+        android:backgroundTint="@color/orange_500"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bEmail"
+        app:layout_constraintEnd_toEndOf="@id/bEmail"
+        app:layout_constraintTop_toBottomOf="@id/bEmail"
+        android:text="@string/login_google"
+        app:icon="@drawable/ic_google"
+        android:backgroundTint="@color/blue_google"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bFacebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bEmail"
+        app:layout_constraintEnd_toEndOf="@id/bEmail"
+        app:layout_constraintTop_toBottomOf="@id/bGoogle"
+        android:text="@string/login_facebook"
+        app:icon="@drawable/ic_facebook"
+        android:backgroundTint="@color/blue_facebook"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bEmail"
+        app:layout_constraintEnd_toEndOf="@id/bEmail"
+        app:layout_constraintTop_toBottomOf="@id/bFacebook"
+        android:text="@string/login_phone"
+        app:icon="@drawable/ic_phone"
+        android:backgroundTint="@color/green_500"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Términos y condiciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        android:gravity="center"
+        android:backgroundTint="@color/yellow_a400_dark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

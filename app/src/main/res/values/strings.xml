@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PruebaFirebaseClient</string>
+    <string name="product_image_description">Product image</string>
+    <string name="activity_main_waiting_text">Espere un momento…</string>
+    <string name="Product_empty_cart">Carrito vacio</string>
+    <string name="Product_view_cart">Ver carrito</string>
+    <string name="error_no_network">Sin red</string>
+    <string name="error_code">Código del error</string>
+    <string name="auth_wellcome">Bienvenido</string>
+    <string name="auth_see_you">Hasta pronto</string>
+    <string name="menu_main_sign_out">Cerrar sesión</string>
+    <string name="finish_session">Sesión finalizada</string>
+    <string name="error_closing_session">No se pudo cerrar sesión</string>
+    <string name="error_loading_data">Error al leer los datos</string>
+
+    <string name="facebook_application_id" translatable="false">293551192481485</string>
+    <!-- Facebook Application ID, prefixed by 'fb'. Enables Chrome Custom tabs. -->
+    <string name="facebook_login_protocol_scheme" translatable="false">fb293551192481485</string>
+    <string name="login_welcome">Bienvenido, por favor inicie sesión</string>
+    <string name="logo_app_description">Logo de la app</string>
+    <string name="login_email">Email</string>
+    <string name="login_google">Google</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_phone">Phone</string>
+    <string name="hint_full_name">Nombre completo</string>
+    <string name="hint_photo_url">URL  foto perfil</string>
+    <string name="profile_update">Actualizar</string>
+    <string name="product_menu_profile">Editar perfil</string>
+    <string name="user_updated">Usuario actualizado</string>
+    <string name="user_updating_error">Error en la actualización del usuario</string>
+    <string name="profile_title">Perfil de usuario</string>
+</resources>
